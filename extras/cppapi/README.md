@@ -18,6 +18,8 @@ Building the example requires the following toolkits and libraries to be set up 
 ```bash
 mkdir build && cd build
 cmake -DCMAKE_CUDA_FLAGS="--expt-extended-lambda -std=c++11" ..
+(for openmp)
+cmake -DCMAKE_CUDA_FLAGS="--expt-extended-lambda -std=c++11" -DCMAKE_CXX_FLAGS="-fopenmp" ..
 make
 ```
 
